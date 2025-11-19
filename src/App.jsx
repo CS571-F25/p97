@@ -1,17 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import MyNavbar from "./components/MyNavbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Banner from "./components/Banner.jsx";
+
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Events from "./pages/Events.jsx";
+import Contact from "./pages/Contact.jsx";
+import Donate from "./pages/Donate.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>UW-Madison PRSA Website!</h1>
-      <p>Coming soon!</p>
-    </>
-  )
+    <Router basename="/p97">
+      <Banner/>
+      <MyNavbar />
+      <div className="mt-4 mb-5 px-3">
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/events" element={<Events/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/donate" element={<Donate/>} />
+        </Routes>
+      </div>
+      <Footer/>
+    </Router>
+  );
 }
 
-export default App
+export default App;
