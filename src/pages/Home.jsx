@@ -1,6 +1,8 @@
 
 
 export default function Home(){
+
+    {/* TODO: Style this accordingly & Add Images*/}
     return (
         <div>
             <div>

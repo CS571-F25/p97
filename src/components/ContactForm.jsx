@@ -7,7 +7,8 @@ export default function ContactForm(){
     const [isValidEmail, setIsValidEmail] = useState(true);
 
     const submitContactForm = () => {
-        {/*TODO: Add regex check for email before to set isValidEmail to true before fetching */}
+        {/*TODO: Add regex check for email before to set isValidEmail to false if not, prior to fetching */}
+        {/*TODO: Formulate API to post to */}
     }
 
     return (

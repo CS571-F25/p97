@@ -7,7 +7,7 @@ export default function Events(){
             <h1>Upcoming Events</h1>
 
             {/*TODO: Create API to dynamically update events using fetch and map to EventCard elements */}
-            {/*TODO: Add a special styling for events currently happening! */}
+            {/*TODO: Add a special styling for events currently in progress! */}
             <h1>Past Events</h1>
 
             {/*TODO: Filter events displayed for past events in parent */}

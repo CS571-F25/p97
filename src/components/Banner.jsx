@@ -1,6 +1,7 @@
 import logo from "../assets/prsalogo.png";
 
 export default function Banner() {
+    {/*TODO: Figure out why the banner passes the navbar when maxWidth is not 100% */}
     return(
         <div className="row" style={{backgroundColor:"black", color: "white"}}>
             <div className="col" style={{maxWidth: "20%"}}>
